@@ -6,6 +6,6 @@
 4. Run `bundle install`
 5. Run `jekyll build`
 
-## To load the server
+## Start the server
 
 1. Run `yarn start`. BrowserSync will open a port and will watch for changes in the _site directory, which is updated by Jekyll.
