@@ -1,0 +1,29 @@
+title: Jekyll Webpack Starter
+description: >-
+  A simple Jekyll + Webpack starter
+
+url: ""
+baseurl: ""
+
+markdown: kramdown
+permalink: /:title
+
+include: ["_pages"]
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .babelrc
+  - webpack*
+  - yarn*
+  - CNAME
+  - .gitignore
+  - package.json
+
+plugins:
+  - jekyll-feed
