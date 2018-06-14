@@ -1,9 +1,9 @@
 {
- "name": "cor",
+ "name": "jekyll-webpack-starter",
  "version": "1.0.0",
  "main": "index.js",
- "repository": "https://github.com/carolinerusso/cor.git",
- "author": "Caroline Russo <code@corusso.com>",
+ "repository": "https://github.com/carolinerusso/jekyll-webpack-starter.git",
+ "author": "Caroline Russo",
  "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1",
   "start": "concurrently -k -n \"WEBPACK,JEKYLL,BROWSERSYNC\" \"webpack --progress -d --verbose\" \"jekyll build --watch\" \"browser-sync start --server _site --files _site\""
