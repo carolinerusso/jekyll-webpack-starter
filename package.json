@@ -6,10 +6,12 @@
  "author": "Caroline Russo",
  "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1",
-  "start": "concurrently -k -n \"WEBPACK,JEKYLL,BROWSERSYNC\" \"webpack --progress -d --verbose\" \"jekyll build --watch\" \"browser-sync start --server _site --files _site\""
+  "start": "concurrently -k -n \"WEBPACK,JEKYLL,BROWSERSYNC\" \"webpack --progress --verbose\" \"jekyll build --verbose --watch\" \"browser-sync start --server _site --files _site\"",
+  "build": "webpack --progress --verbose --config webpack.prod.config.js && jekyll build --verbose"
  },
  "license": "MIT",
  "devDependencies": {
+  "autoprefixer": "^8.6.3",
   "babel-cli": "^6.26.0",
   "babel-core": "^6.26.3",
   "babel-loader": "^7.1.4",
@@ -25,13 +27,11 @@
   "html-webpack-plugin": "^3.2.0",
   "mini-css-extract-plugin": "^0.4.0",
   "node-sass": "^4.9.0",
+  "postcss-loader": "^2.1.5",
   "sass-loader": "^7.0.3",
   "style-loader": "^0.21.0",
   "webpack": "^4.12.0",
   "webpack-cli": "^3.0.3",
   "webpack-dev-server": "^3.1.4"
- },
- "browserslist": [
-  "last 2 versions"
- ]
+ }
 }

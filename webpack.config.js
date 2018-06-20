@@ -3,10 +3,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   watch: true,
+  mode: 'development',
+  devtool: 'eval',
 	entry: './_source/index.js',
 	output: {
 		filename: '[name].js',
-		path: path.resolve(__dirname, '_includes/assets')
+		path: path.resolve(__dirname, 'dist')
 	},
 	module: {
     rules: [
@@ -18,13 +20,30 @@ module.exports = {
         }
       },
       {
-				test: /\.scss$/,
-				use: [
-					'style-loader', // creates style nodes from JS strings
-					MiniCssExtractPlugin.loader, //generate another file
-					'css-loader', // translates CSS into CommonJS
-					'sass-loader' // compiles Sass to CSS
-				]
+				test: /\.(scss|css)$/,
+        use: [{
+            loader: 'style-loader',
+            options: {
+              sourceMap: true
+            }
+          }, 
+          MiniCssExtractPlugin.loader, 
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          },{
+            loader: 'postcss-loader', 
+            options: {
+              sourceMap: true
+            }
+          },{
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
+          }]
 			}
     ]
   },
