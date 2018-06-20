@@ -8,6 +8,8 @@ baseurl: ""
 markdown: kramdown
 permalink: /:title
 
+compiledPath: dist
+
 include: ["_pages"]
 
 exclude:
@@ -18,12 +20,14 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - .babelrc
   - webpack*
   - yarn*
+  - .babelrc
+  - .browserslistrc
+  - readme.md
   - CNAME
-  - .gitignore
   - package.json
+  - postcss.config.js
 
 plugins:
   - jekyll-feed
