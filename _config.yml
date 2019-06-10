@@ -2,13 +2,23 @@ title: Jekyll Webpack Starter
 description: >-
   A simple Jekyll + Webpack starter
 
-url: ""
+#domain
+url: "" 
 baseurl: ""
+runmode: prod
 
 markdown: kramdown
 permalink: /:title
 
-compiledPath: dist
+compiled_path: dist
+
+ga_trackingid: UA-139006851-1
+
+plugins:
+  - jekyll-tidy
+
+jekyll_tidy:
+  compress_html: false
 
 include: ["_pages"]
 
@@ -28,6 +38,3 @@ exclude:
   - CNAME
   - package.json
   - postcss.config.js
-
-plugins:
-  - jekyll-feed

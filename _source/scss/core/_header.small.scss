@@ -1,0 +1,6 @@
+@import './core/header.all';
+$block: 'header';
+
+.#{$block} {
+	color: red;
+}

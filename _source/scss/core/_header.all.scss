@@ -1,0 +1,5 @@
+$block: 'header';
+
+.#{$block} {
+	padding: map-get(map-get($gutter, thin), $breakpoint-size);
+}

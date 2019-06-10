@@ -1,0 +1,15 @@
+
+// GUTTERS //
+$gutter: (
+	thin: (
+		small: 16px,
+		medium: 32px
+	),
+	thick: (
+		small: 32px,
+		medium: 48px
+	)
+);
+
+// BREAKPOINTS //
+$breakpoint-medium: 768px;

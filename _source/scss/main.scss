@@ -1,4 +1,11 @@
 //ADD @import HERE
 
 @import './util/reset';
+@import './util/variables';
 @import './global/base';
+
+@import './breakpoints/small.base';
+
+@media( min-width: $breakpoint-medium ){
+	@import './breakpoints/medium.base';
+}
