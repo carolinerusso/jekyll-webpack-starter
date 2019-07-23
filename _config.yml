@@ -12,7 +12,7 @@ permalink: /:title
 
 compiled_path: dist
 
-ga_trackingid: UA-139006851-1
+ga_trackingid: UA-000000000-1
 
 plugins:
   - jekyll-tidy
