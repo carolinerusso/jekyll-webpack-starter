@@ -10,7 +10,7 @@ runmode: prod
 markdown: kramdown
 permalink: /:title
 
-compiled_path: dist
+compiled_path: /dist
 
 ga_trackingid: UA-000000000-1
 
