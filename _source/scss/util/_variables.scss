@@ -1,3 +1,24 @@
+// BREAKPOINTS //
+$breakpoint-medium: 768px;
+
+// COLORS //
+$color: (
+	red: red
+);
+
+// SPACING //
+$spacing: (
+	xxx-small: 2px,
+	xx-small: 4px,
+	x-small: 8px,
+	small: 12px,
+	medium: 24px,
+	large: 32px,
+	x-large: 48px,
+	xx-large: 72px,
+	xxx-large: 98px
+);
+
 // GUTTERS //
 $gutter: (
 	thin: (
@@ -10,5 +31,61 @@ $gutter: (
 	)
 );
 
-// BREAKPOINTS //
-$breakpoint-medium: 768px;
+// BORDERS //
+$border-radius: 4px;
+
+// TYPOGRAPHY //
+$typography: (
+	desktop: (
+		h1: (
+			font-size: 40px,
+			line-height: 45px
+		),
+		h2: (
+			font-size: 35px,
+			line-height: 42px
+		),
+		h3: (
+			font-size: 24px,
+			line-height: 28px
+		),
+		h4: (
+			font-size: 20px,
+			line-height: 24px
+		),
+		p-large: (
+			font-size: 18px,
+			line-height: 25px
+		),
+		p: (
+			font-size: 16px,
+			line-height: 24px
+		)
+	),
+	mobile: (
+		h1: (
+			font-size: 28px,
+			line-height: 33px
+		),
+		h2: (
+			font-size: 22px,
+			line-height: 28px
+		),
+		h3: (
+			font-size: 18px,
+			line-height: 22px
+		),
+		h4: (
+			font-size: 16px,
+			line-height: 20px
+		),
+		p-large: (
+			font-size: 15px,
+			line-height: 22px
+		),
+		p: (
+			font-size: 14px,
+			line-height: 22px
+		)
+	)
+);

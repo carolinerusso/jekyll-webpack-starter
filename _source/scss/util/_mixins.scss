@@ -1,0 +1,15 @@
+@mixin desktop {
+	@media( min-width: #{$breakpoint-medium} ){
+		@content;
+	}
+}
+
+@mixin typography($level) {
+	font-size: map-get(map-get(map-get($typography, mobile), $level), font-size);
+	line-height: map-get(map-get(map-get($typography, mobile), $level), line-height);
+
+	@include desktop {
+		font-size: map-get(map-get(map-get($typography, desktop), $level), font-size);
+		line-height: map-get(map-get(map-get($typography, desktop), $level), line-height);
+	}
+}

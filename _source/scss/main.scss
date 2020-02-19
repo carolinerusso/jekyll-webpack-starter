@@ -4,8 +4,8 @@
 @import './util/variables';
 @import './global/base';
 
-@import './breakpoints/small.base';
+//CORE PARTIALS
+@import './core/header';
 
-@media( min-width: $breakpoint-medium ){
-	@import './breakpoints/medium.base';
-}
+//COMPONENTS
+@import './components/button';
